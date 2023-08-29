@@ -1,0 +1,209 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #dbcccc;
+}
+
+/* Header styles */
+.h11 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Paragraph styles */
+.p1 {
+  text-align: center;
+  margin: 30px;
+  font-size: 20px;
+}
+
+/* About section styles */
+.h21,
+.h22,
+.h23,
+.h24,
+.h25,
+.h26 {
+  margin-top: 50px;
+}
+
+/* Projects section styles */
+.h22 {
+  margin-top: 50px;
+}
+
+.h31,
+.h32,
+.h33 {
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.h31:hover,
+.h32:hover,
+.h33:hover,
+.h34:hover,
+.h35:hover {
+  color: #d6a06a;
+}
+.p2,
+.p21,
+.p3,
+.p4,
+.p5,
+.p6,
+.p7,
+.p8,
+.p9 {
+  margin: 10px 30px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.h41 {
+  font-size: 20px;
+}
+
+.p6 a {
+  text-decoration: none;
+  color: #000;
+  transition: color 0.3s ease-in-out;
+}
+
+.p6 a:hover {
+  color: #ff6600;
+}
+
+/* Box section styles */
+.box {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 50px;
+  text-align: center;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out;
+}
+/* Animated Header */
+.h11 {
+  font-size: 50px;
+  color: #333;
+  text-align: center;
+  animation-name: fadein;
+  animation-duration: 1s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Animated About Section */
+.h21,
+.h22,
+.h23,
+.h24,
+.h25,
+.h26,
+.p2,
+.p21 {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation-name: slidein;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slidein {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Animated Project Sections */
+
+.p1,
+.p2,
+.p3,
+.p4,
+.p5,
+.p6,
+.p7,
+.p8,
+.p9 {
+  opacity: 0;
+  transform: translateY(50px);
+  animation-name: slideup;
+  animation-duration: 4s;
+  animation-fill-mode: both;
+}
+
+.h31,
+.h33,
+.h32,
+.h33,
+.h34,
+.h35{
+  opacity: 0;
+  transform: translateY(-50px);
+  animation-name: slideup;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+}
+
+@keyframes slideup {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animated Social Media Links */
+.sm {
+  opacity: 0;
+  transform: translateY(50px);
+  animation-name: slideup;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+/* Animated Box */
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #333;
+  opacity: 0;
+  transform: scale(0);
+  animation-name: scalein;
+  animation-duration: 1s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes scalein {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
